@@ -28,7 +28,7 @@ public class AccountTest {
 //        System.out.println("After serialisation: " + new String(valueAsBytes));
 
         // accounts accountId field and getAccountID causes this to fail!
-        // change getter to getAccountId and this works. But what if you mapping a 3rd party jar!?
+        // change getter to getAccountId and this works. But what if you're mapping a 3rd party jar!?
         assertThat(objectMapper.readValue(valueAsBytes, Account.class), is(equalTo(account)));
     }
 
