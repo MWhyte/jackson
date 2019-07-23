@@ -1,6 +1,6 @@
 
 
-Some techniques for getting around jackson mapping issues.
+#### Some techniques for getting around jackson mapping issues.
 
 Jackson needs two things to work
 - A Default constructor
@@ -11,10 +11,12 @@ But what if a domain class doesnt have these traits and you cant change them!
 
 The use of Mixin's solves these problems
 
-### 1. no default constructor
+##### 1. an object with no default constructor
 
-Website Domain Object
+Example: Website Domain Object
+Mixin: WebsiteMixin
 
-### 2. non matching getters names
+##### 2. non matching getters names
 
-Account Domain Object
+Example: Account Domain Object
+Mixin: AccountMixin
