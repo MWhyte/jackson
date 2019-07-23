@@ -11,12 +11,14 @@ But what if a domain class doesnt have these traits and you cant change them!
 
 The use of Mixin's solves these problems
 
-##### 1. an object with no default constructor
+##### 1. An object with no default constructor
 
 Example: Website Domain Object
+
 Mixin: WebsiteMixin
 
-##### 2. non matching getters names
+##### 2. Non matching getters names
 
 Example: Account Domain Object
+
 Mixin: AccountMixin
