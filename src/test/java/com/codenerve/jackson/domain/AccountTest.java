@@ -16,7 +16,7 @@ public class AccountTest {
     private Account account;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         objectMapper = new ObjectMapper();
         account = new Account("123456", "Savings");
     }
@@ -25,7 +25,7 @@ public class AccountTest {
     public void mappingObjectWithNonDefaultGetter_fails() throws Exception {
         byte[] valueAsBytes = objectMapper.writeValueAsBytes(account);
 
-//        System.out.println("After serialisation: " + new String(valueAsBytes));
+        System.out.println("After serialisation: " + new String(valueAsBytes));
 
         // accounts accountId field and getAccountID causes this to fail!
         // change getter to getAccountId and this works. But what if you're mapping a 3rd party jar!?
@@ -38,7 +38,7 @@ public class AccountTest {
 
         byte[] valueAsBytes = objectMapper.writeValueAsBytes(account);
 
-//        System.out.println("After serialisation: " + new String(valueAsBytes));
+        System.out.println("After serialisation: " + new String(valueAsBytes));
         assertThat(objectMapper.readValue(valueAsBytes, Account.class), is(equalTo(account)));
     }
 }

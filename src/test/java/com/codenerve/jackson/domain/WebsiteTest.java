@@ -1,6 +1,5 @@
 package com.codenerve.jackson.domain;
 
-import com.codenerve.jackson.domain.Website;
 import com.codenerve.jackson.mixin.WebsiteMixin;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -19,7 +18,7 @@ public class WebsiteTest {
     private Website website;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         objectMapper = new ObjectMapper();
         website = new Website("codenerve", "https://codenerve.com");
     }
