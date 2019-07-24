@@ -1,5 +1,3 @@
-
-
 #### Some techniques for getting around jackson mapping issues.
 
 Jackson needs two things to work
