@@ -13,10 +13,10 @@ The use of Mixin's solves these problems
 
 Example: Website Domain Object
 
-Mixin: WebsiteMixin
+Mixin: `WebsiteMixin`
 
 ##### 2. Non matching getters names
 
 Example: Account Domain Object
 
-Mixin: AccountMixin
+Mixin: `AccountMixin`
